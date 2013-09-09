@@ -9,18 +9,25 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
-    <header class="navbar navbar-fixed-top">
+    <header class="navbar navbar-inverse">
       <nav class="navbar-inner">
         <div class="container">
           <%= render 'layouts/navigation' %>
+          <form class="navbar-form pull-right">
+            <input type="text" class="span2">
+            <button type="submit" class="btn">Submit</button>
+          </form>
         </div>
       </nav>
     </header>
     <main role="main">
       <div class="container">
         <div class="content">
-           <div class="row">
-            <div class="span12">
+          <div class="hero-unit">
+            <h1>Heading</h1>
+            <p>Tagline</p>
+            <p><a class="btn btn-primary btn-large">Learn more</a></p>
+          </div>
               <%= render 'layouts/messages' %>
               <%= yield %>
             </div>
