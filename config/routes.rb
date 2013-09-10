@@ -1,3 +1,8 @@
 RailsComposerTest::Application.routes.draw do
-  root :to => 'visitors#new'
+  resources :posts
+
+  devise_for :users
+ 
+    
+root :to => 'posts#new'
 end
