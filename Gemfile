@@ -27,6 +27,6 @@ group :development do
   gem 'rb-inotify', :require=>false
   
   group :production do
-    gem 'pg', '0.15.1'
+    gem 'pg'
   end
 end
